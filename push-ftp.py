@@ -1,7 +1,9 @@
 from ftplib import FTP, all_errors
 import os
+import logging
 
-
+# 配置日志记录
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
 # 创建一个FTP对象
 ftp = FTP()
 connected = False
